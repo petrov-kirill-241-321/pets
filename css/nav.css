@@ -1,0 +1,38 @@
+/* nav */
+.nav {
+  padding-top: 47px;
+  padding-bottom: 108px;
+}
+
+.nav__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  align-items: center;
+}
+.nav__list {
+}
+.nav__logo {
+  text-align: center;
+}
+.nav__button {
+  text-align: right;
+}
+
+/* nav-list */
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 156%;
+  color: var(--333333);
+}
+.nav-list__item {
+}
+.nan-list__link {
+  color: var(--333333);
+}

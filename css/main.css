@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* -------- BASE ---------- */
+@import "./vars.css";
+@import "./base.css";
+/* -------Blocks------------- */
+@import "./button.css";
+
+/* ------SECTIONS------- */
+
+@import "./nav.css";
+@import "./header.css";
+@import "./section.css";
+@import "./services.css";
+@import "./slider.css";
+@import "./pane-footer.css";
+@import "./footer.css";
+
+.section-pane {
+  margin-bottom: 141px;
+}
+
+.section-column {
+}
+.subtitle {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 167%;
+  color: #000;
+}
+
+.paw-list {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: #000;
+}
+
+.paw-item {
+  position: relative;
+  padding-left: 40px;
+}
+
+.paw-item::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+  background-image: url(../icons/paw.svg);
+}

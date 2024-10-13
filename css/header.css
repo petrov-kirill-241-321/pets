@@ -1,0 +1,138 @@
+/* Header */
+.header {
+  margin-bottom: 90px;
+}
+
+.header__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 200px auto 200px;
+  gap: 30px;
+  align-items: end;
+}
+
+.header__round-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.header__column {
+  padding-bottom: 235px;
+}
+.scroll-text {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  color: var(--333333);
+}
+
+.scroll-text::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  display: block;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.scroll-text__bullet--right {
+  flex-direction: row-reverse;
+}
+
+.header__content {
+  padding-top: 210px;
+}
+
+.header-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 41px;
+  position: relative;
+}
+
+.header-img-wrapper::before {
+  content: "";
+  width: 45px;
+  height: 75px;
+  position: absolute;
+  top: 460px;
+  left: 280px;
+  background-image: url(../icons/star-medium.svg);
+}
+
+.header-img-wrapper::after {
+  content: "";
+  width: 39px;
+  height: 65px;
+  position: absolute;
+  right: 330px;
+  top: 87px;
+  background-image: url(../icons/star-small.svg);
+}
+
+.header-img {
+  width: 534px;
+  height: 802px;
+  border-radius: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.header-img::after {
+  content: "";
+  display: block;
+  background-image: linear-gradient(
+    360deg,
+    #2c2c2c -20%,
+    rgba(217, 217, 217, 0) 50%
+  );
+  mix-blend-mode: multiply;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header-title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 110px;
+  line-height: 91%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--333333);
+}
+
+.header-title--img {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 906px;
+  left: 50%;
+  transform: translate(-50%, -30px);
+}
+
+.header-title--black {
+  position: absolute;
+  bottom: 30px;
+}
+
+.header__desk {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  text-align: center;
+  color: var(--333333);
+}
